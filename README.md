@@ -1,1 +1,3 @@
 # learnexpress
+
+'node server.js'
