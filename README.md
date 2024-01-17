@@ -1,3 +1,7 @@
 # learnexpress
 
-'node server.js'
+## Install
+`npm i`
+
+## Run
+`node server.js`
