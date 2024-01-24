@@ -1,8 +1,11 @@
 {% extends "partials/layout.njk" %}
 {% block title %}Form{% endblock %}
 {% block content %}
+   <h1>Give me your money :3</h1>
+   {% if fname and cardnr and code and exdate %}
+   <p>Hiii {{ fname }} sorry I emptied your bank account :P</p>
+   {% endif %}
     <form>
-        <h1>Give me your money :3</h1>
         <p>
           <label>
             Full name <br>
@@ -24,7 +27,7 @@
         </p>
           <label>
             Exp. date <br>
-            <input type="number" placeholder="xx/xx" name="date"> 
+            <input type="number" placeholder="xx/xx" name="exdate"> 
           </label>
         </p>
         <p>

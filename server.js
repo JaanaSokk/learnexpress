@@ -17,8 +17,10 @@ app.get('/page2', (req, res) => {
   });
 
 app.get('/form', (req, res) => {
-    res.render('form.njk')
-})
+    console.log(req.query);
+    res.render('form.njk', req.query);
+});
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);
