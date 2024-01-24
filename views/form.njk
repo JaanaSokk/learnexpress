@@ -1,0 +1,34 @@
+{% extends "partials/layout.njk" %}
+{% block title %}Form{% endblock %}
+{% block content %}
+    <form>
+        <h1>Give me your money :3</h1>
+        <p>
+          <label>
+            Full name <br>
+            <input type="text" placeholder="John Johnson" name="fname"> 
+          </label>
+        </p>
+        <p>
+          <label>
+            Credit card number <br>
+            <input type="number" placeholder="xxxx-xxxx-xxxx-xxxx" name="cardnr"> 
+          </label>
+        </p>
+        <p>
+          <label>
+            Security code <br>
+            <input type="number" placeholder="xxx" name="code"> 
+          </label>
+        <p>
+        </p>
+          <label>
+            Exp. date <br>
+            <input type="number" placeholder="xx/xx" name="date"> 
+          </label>
+        </p>
+        <p>
+            <input type="submit" value="Send">
+        </p>
+    </form>
+{% endblock %}
